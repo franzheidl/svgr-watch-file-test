@@ -1,0 +1,13 @@
+{
+  "name": "svgr-test",
+  "version": "0.0.1",
+  "scripts": {
+    "svgr-build-all": "svgr --no-svgo -d './js' ./svg/*.svg",
+    "svgr-build-file": "svgr --no-svgo -d './js' {path}",
+    "watch": "npm run svgr-build-all && chokidar 'svg/*.svg' -c 'if [ \"{event}\" = \"add\" ] || [ \"{event}\" = \"change\" ]; then npm run svgr-build-file -- {path}; fi;'"
+  },
+  "devDependencies": {
+    "chokidar-cli": "^1.2.0",
+    "svgr": "^1.10.0"
+  }
+}
