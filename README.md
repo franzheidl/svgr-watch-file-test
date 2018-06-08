@@ -1,0 +1,1 @@
+# svgr-watch-file-test
