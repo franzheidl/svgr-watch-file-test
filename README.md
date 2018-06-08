@@ -6,6 +6,7 @@ Quick example how to generate React components from SVG files on the fly by watc
     
 This will create a `.js` file with a react component in a `./js`directory for each `.svg` file in `./svg` directory ONCE and then watch `./svg` for changes. When an `.svg` file is being changed or added, the corresponding `.js` file will be built.
 
-*TODO*
-* massage to path/ only pass the filename instead of path to `svgr` to avoid creating an `svg` subdirectory in `js`
+**TODO:**
+* massage path/ only pass the filename instead of path to `svgr` to avoid creating an `svg` subdirectory in `js`
 * delete corresponding `js`file once `svg`file is deleted
+* integrate with `react-scripts`in create-react-app (use [https://github.com/kitze/custom-react-scripts](https://github.com/kitze/custom-react-scripts)?)
